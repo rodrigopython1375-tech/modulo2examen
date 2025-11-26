@@ -103,7 +103,12 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <button class="btn btn-outline-dark" type="submit">
+                            <button
+                                class="btn btn-outline-dark"
+                                type="submit"
+                                data-bs-toggle="modal"
+                                href="#Modalcarro"
+                            >
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 Carro
                                 <span
@@ -526,6 +531,7 @@
                                         class="btn btn-outline-dark flex-shrink-0"
                                         onclick="sumar()"
                                         type="button"
+                                        id="1"
                                     >
                                         <i class="bi-cart-fill me-1"></i>
                                         Add to cart
@@ -589,6 +595,7 @@
                                     <button
                                         class="btn btn-outline-dark flex-shrink-0"
                                         onclick="sumar()"
+                                        id="2"
                                         type="button"
                                     >
                                         <i class="bi-cart-fill me-1"></i>
@@ -653,6 +660,7 @@
                                     <button
                                         class="btn btn-outline-dark flex-shrink-0"
                                         onclick="sumar()"
+                                        id="3"
                                         type="button"
                                     >
                                         <i class="bi-cart-fill me-1"></i>
@@ -711,6 +719,7 @@
                                     <button
                                         class="btn btn-outline-dark flex-shrink-0"
                                         onclick="sumar()"
+                                        id="4"
                                         type="button"
                                     >
                                         <i class="bi-cart-fill me-1"></i>
@@ -773,6 +782,7 @@
                                     <button
                                         class="btn btn-outline-dark flex-shrink-0"
                                         onclick="sumar()"
+                                        id="5"
                                         type="button"
                                     >
                                         <i class="bi-cart-fill me-1"></i>
@@ -832,6 +842,7 @@
                                     <button
                                         class="btn btn-outline-dark flex-shrink-0"
                                         onclick="sumar()"
+                                        id="6"
                                         type="button"
                                     >
                                         <i class="bi-cart-fill me-1"></i>
@@ -894,6 +905,7 @@
                                     <button
                                         class="btn btn-outline-dark flex-shrink-0"
                                         type="button"
+                                        id="7"
                                         onclick="sumar()"
                                     >
                                         <i class="bi-cart-fill me-1"></i>
@@ -953,12 +965,46 @@
                                     <button
                                         class="btn btn-outline-dark flex-shrink-0"
                                         onclick="sumar()"
+                                        id="8"
                                         type="button"
                                     >
                                         <i class="bi-cart-fill me-1"></i>
                                         Add to cart
                                     </button>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal carro de compras -->
+        <div
+            class="catalogo-modal modal fade"
+            id="Modalcarro"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row gx-4 gx-lg-5 align-items-center">
+                            <div id="cart">
+                                <h2>Tu Carrito</h2>
+                                <div id="cartItems">
+                                    No hay artículos en el carrito
+                                </div>
+                                <h3>Total: <span id="total">$0</span></h3>
                             </div>
                         </div>
                     </div>
