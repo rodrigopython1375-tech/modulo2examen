@@ -54,11 +54,6 @@ document.getElementById("8").onclick = function () {
 
 contador = document.getElementById("contador");
 
-function sumar() {
-    valor = contador.textContent;
-    contador.textContent = parseInt(valor) + 1;
-}
-
 function addToCart(productName) {
     valor = contador.textContent;
     // primero, comprobar si el producto ya existe en el carrito
