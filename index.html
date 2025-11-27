@@ -21,109 +21,115 @@
     </head>
     <body class="bg-secondary">
         <header id="header">
-            <nav
-                class="navbar fixed-top navbar-expand-lg navbar-light"
-                data-bs-theme="dark"
-            >
-                <div class="container px-4 px-lg-5">
-                    <a class="navbar-brand pt-2 ps-2" href="#">
-                        <img
-                            src="assets/img/947d20e6-bb20-49f9-85f7-76d64bdf0dc9.jpeg"
-                            alt=""
-                            height="60px"
-                        />
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
+            <section class="hero-section">
+                <div class="container">
+                    <nav
+                        class="navbar navbar-expand-lg navbar-dark shadow-5-strong"
                     >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse"
-                        id="navbarSupportedContent"
-                    >
-                        <ul class="navbar-nav m-auto">
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#header"
-                                    >Inicio</a
-                                >
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    id="navbarDropdown"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    >Catalogo</a
-                                >
-                                <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="navbarDropdown"
-                                >
-                                    <li>
-                                        <a class="dropdown-item" href="#perros"
-                                            >Juguetes Perros</a
-                                        >
-                                    </li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#gatos"
-                                            >Juguetes Gatos</a
-                                        >
-                                    </li>
-                                    <li>
+                        <div class="container px-4 px-lg-5">
+                            <a class="navbar-brand pt-2 ps-2" href="#">
+                                <img
+                                    src="assets/img/947d20e6-bb20-49f9-85f7-76d64bdf0dc9.jpeg"
+                                    alt=""
+                                    height="60px"
+                                />
+                            </a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div
+                                class="collapse navbar-collapse"
+                                id="navbarSupportedContent"
+                            >
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item">
                                         <a
-                                            class="dropdown-item"
-                                            href="#catalogo"
-                                            id="ofertas"
-                                            onclick="link_ofertas()"
-                                            >Ofertas</a
+                                            class="nav-link active"
+                                            aria-current="page"
+                                            href="#header"
+                                            >Inicio</a
+                                        >
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a
+                                            class="nav-link dropdown-toggle"
+                                            id="navbarDropdown"
+                                            href="#"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            >Catalogo</a
+                                        >
+                                        <ul
+                                            class="dropdown-menu"
+                                            aria-labelledby="navbarDropdown"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#perros"
+                                                    >Juguetes Perros</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider" />
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#gatos"
+                                                    >Juguetes Gatos</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#catalogo"
+                                                    id="ofertas"
+                                                    onclick="link_ofertas()"
+                                                    >Ofertas</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            aria-current="page"
+                                            href="#contacto"
+                                            >Contacto</a
                                         >
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#"
-                                    >Contacto</a
-                                >
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <button
-                                class="btn btn-outline-dark"
-                                type="submit"
-                                data-bs-toggle="modal"
-                                href="#Modalcarro"
-                            >
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                Carro
-                                <span
-                                    class="badge bg-dark text-white ms-1 rounded-pill"
-                                    id="contador"
-                                    >0</span
-                                >
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-
-            <section class="hero-section">
-                <div class="container">
+                                <form class="d-flex">
+                                    <button
+                                        class="btn btn-outline-dark"
+                                        type="submit"
+                                        data-bs-toggle="modal"
+                                        href="#Modalcarro"
+                                    >
+                                        <i
+                                            class="fa-solid fa-cart-shopping"
+                                        ></i>
+                                        Carro
+                                        <span
+                                            class="badge bg-dark text-white ms-1 rounded-pill"
+                                            id="contador"
+                                            >0</span
+                                        >
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
                     <div class="row">
                         <div class="col-lg-12">
                             <h1 class="text-black">Happypet store</h1>
@@ -166,7 +172,7 @@
                                         class="btn btn-outline-dark mt-auto"
                                         data-bs-toggle="modal"
                                         href="#Modal1"
-                                        >Detalle</a
+                                        >Ver mas</a
                                     >
                                 </div>
                             </div>
@@ -221,7 +227,7 @@
                                         class="btn btn-outline-dark mt-auto"
                                         data-bs-toggle="modal"
                                         href="#Modal2"
-                                        >Detalle</a
+                                        >Ver mas</a
                                     >
                                 </div>
                             </div>
@@ -261,7 +267,7 @@
                                         class="btn btn-outline-dark mt-auto"
                                         data-bs-toggle="modal"
                                         href="#Modal3"
-                                        >Detalle</a
+                                        >Ver mas</a
                                     >
                                 </div>
                             </div>
@@ -302,7 +308,7 @@
                                         class="btn btn-outline-dark mt-auto"
                                         data-bs-toggle="modal"
                                         href="#Modal4"
-                                        >Detalle</a
+                                        >Ver mas</a
                                     >
                                 </div>
                             </div>
@@ -345,7 +351,7 @@
                                         class="btn btn-outline-dark mt-auto"
                                         data-bs-toggle="modal"
                                         href="#Modal5"
-                                        >Detalle</a
+                                        >Ver mas</a
                                     >
                                 </div>
                             </div>
@@ -378,7 +384,7 @@
                                         class="btn btn-outline-dark mt-auto"
                                         data-bs-toggle="modal"
                                         href="#Modal6"
-                                        >Detalle</a
+                                        >Ver mas</a
                                     >
                                 </div>
                             </div>
@@ -433,7 +439,7 @@
                                         class="btn btn-outline-dark mt-auto"
                                         data-bs-toggle="modal"
                                         href="#Modal7"
-                                        >Detalle</a
+                                        >Ver mas</a
                                     >
                                 </div>
                             </div>
@@ -469,7 +475,7 @@
                                         class="btn btn-outline-dark mt-auto"
                                         data-bs-toggle="modal"
                                         href="#Modal8"
-                                        >Detalle</a
+                                        >Ver mas</a
                                     >
                                 </div>
                             </div>
@@ -478,10 +484,102 @@
                 </div>
             </div>
         </section>
+        <div class="container my-5" id="contacto">
+            <footer class="bg-black text-center text-lg-start text-white">
+                <div class="container p-2">
+                    <div class="row my-2">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <div
+                                class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-2 mx-auto"
+                                style="width: 150px; height: 150px"
+                            >
+                                <img
+                                    src="assets/img/947d20e6-bb20-49f9-85f7-76d64bdf0dc9.jpeg"
+                                    height="70"
+                                    alt=""
+                                    loading="lazy"
+                                />
+                            </div>
 
-        <footer class="text-center text-white bg-dark px-5">
-            Rodrigo Oyarzun todos los derechos reservados
-        </footer>
+                            <ul
+                                class="list-unstyled d-flex flex-row justify-content-center"
+                            >
+                                <li>
+                                    <a class="text-white px-2" href="#!">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white px-2" href="#!">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white ps-2" href="#!">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Productos</h5>
+
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"
+                                        ><i class="fas fa-paw pe-3"></i>Juguetes
+                                        para perros</a
+                                    >
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-white"
+                                        ><i class="fas fa-paw pe-3"></i>Juguetes
+                                        para gatos</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Contacto</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>
+                                        <i
+                                            class="fas fa-map-marker-alt pe-2"
+                                        ></i
+                                        >mi casa 01, Maipu , Chile
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fas fa-phone pe-2"></i>+ 01
+                                        234 567 89
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fas fa-envelope pe-2 mb-0"></i
+                                        >contact@example.com
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="text-center p-1"
+                    style="background-color: rgba(0, 0, 0, 0.2)"
+                >
+                    © 2025 Copyright:
+                    <a class="text-white" href="">Happypet.com</a>
+                </div>
+            </footer>
+        </div>
+
         <!-- modal1 -->
         <div
             class="catalogo-modal modal fade"
